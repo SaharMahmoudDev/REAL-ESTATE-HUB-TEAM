@@ -28,7 +28,7 @@ import { ReactQueryDevtools } from "./../node_modules/@tanstack/react-query-devt
 // PAGES
 
 const BrowserPage = lazy(() => import("./pages/BrowserPage"));
-const ProductDetails = lazy(() => import("./pages/ProductDetails"));
+const ProductDetails = lazy(() => import("./pages/productDetails"));
 const SignupPage = lazy(() => import("./pages/SignupPage"));
 // const AuthLayout = lazy(() => import("./pages/AuthLayout"));
 const SigninPage = lazy(() => import("./pages/SigninPage"));
