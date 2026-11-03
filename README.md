@@ -1,12 +1,51 @@
-# React + Vite
+# Real Estate Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A team-built real estate web app where users can browse properties for sale or rent, search and filter listings, view property details, and sign up or sign in.
 
-Currently, two official plugins are available:
+**Live demo:** https://realestatehubteam.pages.dev/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Buy and Rent listings fetched with TanStack Query
+- Search and filters by location, price, type, bedrooms, bathrooms, and area
+- Sorting by price, area, and date
+- Page-based pagination on large screens, infinite scroll on mobile
+- Property details page
+- Sign up, sign in (including Google sign-in), and reset password
+- Responsive layout for mobile, tablet, and desktop
 
-## Expanding the ESLint configuration
+## Tech Stack
+React · Vite · TanStack Query · Zustand · Tailwind CSS · Material UI · Axios · Zod · React Router · json-server (mock API)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## My Role
+- Owned the **Buy & Rent** pages: listing display, search, filters, and sorting
+- Built responsive pagination with infinite scroll on mobile (`useLoadMore`)
+- Managed filter state with **Zustand**
+- Built the **auth pages**: sign up, sign in, reset password, and Google sign-in
+- Built the AI chat page
+- Used mock APIs ahead of backend integration
+
+## Project Structure
+```
+src/
+├── features/
+│   ├── browser/   # Buy & Rent: components, hooks, api, store
+│   ├── auth/      # Sign up, sign in, reset password
+│   └── chatbot/
+├── pages/
+├── Components/
+├── router/
+└── hooks/
+```
+
+## Getting Started
+```bash
+npm install
+npm run start:api   # mock API on port 5175
+npm run dev
+```
+Create a `.env` file with `VITE_API_BASE_URL` and `VITE_GOOGLE_CLIENT_ID` (see `.env.example`).
+
+## What I Learned
+- Working in a team with branches, forks, and pull requests
+- Server-state caching with TanStack Query and client state with Zustand
+- Designing pagination that changes between desktop and mobile
