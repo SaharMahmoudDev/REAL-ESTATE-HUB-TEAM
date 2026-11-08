@@ -2,7 +2,7 @@
 
 A team-built real estate web app where users can browse properties for sale or rent, search and filter listings, view property details, and sign up or sign in.
 
-![Real Estate Hub preview](https://raw.githubusercontent.com/SaharMahmoudDev/SaharMahmoudDev.github.io/main/images/real-estate-hub-light.jpg)
+![Real Estate Hub preview](https://raw.githubusercontent.com/SaharMahmoudDev/SaharMahmoudDev.github.io/main/images/real-estate-hub-devices.webp)
 
 **Live demo:** https://realestatehubteam.pages.dev/
 
